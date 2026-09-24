@@ -160,7 +160,8 @@ public:
         while (health > 0)
 
         {
-
+            cout << endl;
+            cout << endl;
             cout << "Available Attack" << endl
                  << "energy" << endl
                  << "slash" << endl
@@ -170,11 +171,12 @@ public:
                  << "galaxy slash" << endl
                  << "Enter The Attack Name: ";
             getline(cin, attack);
+            cout << endl;
             getYuan();
 
             bool validattack = false;
 
-            for (int i = 0; i < sizeof(attackname); i++)
+            for (int i = 0; i < sizeof(attackname) / sizeof(attackname[0]); i++)
             {
                 if (attack == attackname[i])
                 {
@@ -216,15 +218,14 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
 
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else if (attack == attackname[1])
@@ -241,14 +242,13 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else if (attack == attackname[2])
@@ -265,14 +265,13 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else if (attack == attackname[3])
@@ -290,14 +289,13 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else if (attack == attackname[4])
@@ -314,14 +312,13 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else if (attack == attackname[5])
@@ -339,14 +336,13 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
                 cout << "The Remaining Health Of Shushi Is: " << sh << endl;
+                cout << endl;
                 cout << "Shushi attack with damage of: " << hdamage << endl;
                 cout << "The Remaining Health Of Yochiro Is: " << h << endl;
-                cout << endl;
-                cout << endl;
             }
 
             else
@@ -358,7 +354,7 @@ public:
                 {
                     cout << "Shushi lost the battle against: " << endl
                          << "Name - YOCHIRO" << endl
-                         << "Rank - BANGALI" << endl;
+                         << "Rank - CELUNAR" << endl;
                     break;
                 }
 
@@ -367,8 +363,6 @@ public:
                 cout << endl;
                 cout << "I Think, You MISS The Attack" << endl
                      << "Please Correct The Attack Name " << endl;
-                cout << endl;
-                cout << endl;
             }
 
             vhealth = vhealth - hdamage;
@@ -390,11 +384,8 @@ int main()
 
     Shushi s;
     s.display();
-    cout << endl;
-
     s.setYnan();
     s.setYuan();
-
     s.setdefence();
     s.setattackname();
     s.getattackname();
